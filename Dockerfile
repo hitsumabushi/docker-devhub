@@ -28,6 +28,13 @@ RUN \
   cd DevHub && \
   npm install
 
+#-----
+# Install mongodb admin tools
+#-----
+RUN \
+  apt-get install -y php-pear php5-dev php5-mongo php5-fpm nginx
+
+
 # Add supervisor config file
 ADD template/etc/supervisor/conf.d/devhub.conf /etc/supervisor/conf.d/devhub.conf
 
