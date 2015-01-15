@@ -1,10 +1,10 @@
-FROM ubuntu
+FROM hitsumabushi/ubuntu
 
 MAINTAINER hitsumabushi
 
 ENV DEBIAN_FRONTEND noninteractive
 
-# Install curl
+# Install basic tools
 RUN \
   apt-get update && \
   apt-get install -y curl git supervisor
