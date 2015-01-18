@@ -31,8 +31,8 @@ RUN \
 #-----
 # Install mongodb admin tools
 #-----
-RUN \
-  apt-get install -y php-pear php5-dev php5-mongo php5-fpm nginx
+#RUN \
+#  apt-get install -y php-pear php5-dev php5-mongo php5-fpm nginx
 
 
 # Add supervisor config file
